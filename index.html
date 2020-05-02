@@ -6,8 +6,26 @@
     <link rel="stylesheet" href="site.css"/>
 </head>
 <body>
-//todo
 
-<link rel="script" href="main.js"/>
+<h1>David Johnson</h1>
+
+<sub>BSc Computer Science at University of Cape Town</sub>
+<br/><br/>
+<button onclick="onDarkModeClick()" id="btn-dark">Switch to Dark Mode</button>
+<br/><br/>
+
+<div id="github-div"></div>
+
+<h2 onclick="toggleHidden('section-edu')">Education</h2>
+<div id="section-edu" class="sect">
+    <ul><li>High School</li><li>Uni</li></ul>
+</div>
+
+<h2 onclick="toggleHidden('section-exp')">Experience</h2>
+<div id="section-exp" class="sect">
+    <ul><li>comp1</li><li>comp2</li></ul>
+</div>
+
+<script src="main.js" ></script>
 </body>
 </html>

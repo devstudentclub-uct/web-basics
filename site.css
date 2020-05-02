@@ -1,0 +1,7 @@
+.sect {
+    display: none;
+}
+
+h2:hover {
+    cursor: pointer;
+}
