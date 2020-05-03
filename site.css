@@ -1,0 +1,39 @@
+body{
+	text-align: center;
+	background-color: gray;
+}
+
+.section-title{
+	color: #1E5162;
+}
+
+#cv-wrapper{
+	display: inline-block;
+	background-color: white;
+	width: 60%;
+	padding: 30px;
+	text-align: left;
+}
+
+#profile-wrapper{
+	display: flex;
+	background-color: #43A6C6;
+	border-radius: 10px;
+}
+
+#profile-wrapper img{
+	border-radius: 50%;
+	margin: 20px;
+}
+
+#personal-info{
+	margin-left: 30px;
+}
+
+.employment-entry h3, #education h3{
+	margin-bottom: 0px;
+}
+
+.employment-entry h3 span{
+	float: right;
+}
