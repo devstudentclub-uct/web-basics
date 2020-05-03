@@ -34,6 +34,18 @@ body{
 	margin-bottom: 0px;
 }
 
-.employment-entry h3 span{
+.employment-entry h3 span {
 	float: right;
+}
+
+.sect {
+    display: none;
+}
+
+h2:hover {
+    cursor: pointer;
+}
+
+#btn-dark {
+	margin-top: 16px;
 }

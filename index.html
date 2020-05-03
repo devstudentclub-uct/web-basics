@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="site.css"/>
 </head>
 <body>
+
 	<div id="cv-wrapper">
 		<div id="profile-wrapper">
 			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTF3v5p9PAWs_9pA-mIx8DrQIDtr-ajrsPRnZ2E92LMREeDJKv5&usqp=CAU">
@@ -19,15 +20,22 @@
 				</h3>
 			</div>
 		</div>
+
+		<button onclick="onDarkModeClick()" id="btn-dark">Switch to Dark Mode</button>
+		<button onclick="expandAll()">Expand/Collapse all</button>
+
 		<div id="summary">
-			<h2 class="section-title">Summary of Qualifications</h2>
-			<p>Award-winning nuclear safety inspector with 20 years' experience, plus additional skills as police
+			<h2 class="section-title" onclick="toggleHidden('sect-summary')">Summary of Qualifications</h2>
+			<p id="sect-summary" class="sect">Award-winning nuclear safety inspector with 20 years' experience, plus additional skills as police
 				chief, bartender, astronaut, snowplow driver, sports team mascot, and uhhh, is that a box of
 				donuts?</p>
 		</div>
 		<hr>
-		<div id="employment-history-wrapper">
-			<h2 class="section-title">Employment History</h2>
+		<div id="github-div"></div>
+		<hr>
+		<h2 class="section-title" onclick="toggleHidden('employment-history-wrapper')">Employment History</h2>
+		<div id="employment-history-wrapper" class="sect">
+
 			<div class="employment-entry">
 				<h3>Springfield Nuclear Power Plant, Springfield, USA <span>1989 to present</span></h3>
 				<i>Safety Inspector</i>
@@ -82,20 +90,21 @@
 						games for minor league baseball team</li>
 				</ul>
 			</div>
-			<hr>
+
 		</div>
-		<div id="education">
-			<h2 class="section-title">Education</h2>
-			
+		<hr>
+		<h2 class="section-title" onclick="toggleHidden('education')">Education</h2>
+		<div id="education" class="sect">
 			<h3>Springfield High School, Springfield, USA</h3>
 			<i>HS Diploma College Prep</i>
 		</div>
 		<hr>
-		<div id="awards">
-			<h2 class="section-title">Awards</h2>
+		<h2 class="section-title" onclick="toggleHidden('awards')">Awards</h2>
+		<div id="awards" class="sect">
 			<p><b>1992: </b> Montgomery Burns Award for Outstanding Service in the Field of Excellence</p>
 		</div>
 	</div>
-<link rel="script" href="main.js"/>
+
+<script src="main.js" ></script>
 </body>
 </html>
